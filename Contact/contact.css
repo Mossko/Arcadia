@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*générale*/
+
+body {
+    background: url('fond-vert-motif.avif');
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/*Header*/
+
+header {
+    background: url('Image de fond.jpg');
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo1 {
+    margin-left: 630px;
+}
+
+/*Navigation*/
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/*contact*/
+
+.contact {
+    text-align: center;
+    padding: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 20px;
+    background-color: green;
+    margin-right: 170px;
+    margin-left: 170px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+input {
+    font-size: larger;
+    color: black;
+    border: 0px;
+}
+
+button {
+    font-size: 20px;
+    color: green;
+}
+
+.contact_title {
+    margin-bottom: 30px;
+}
+
+.DM {
+    margin-bottom: 80px;
+    font-size: 25px;
+}
+
+/*Fin contact*/
+
+/*footer*/
+
+footer {
+    background: url('Image de fond.jpg');
+    color: white;
+}
+
+.horaires {
+    text-align: center;
+    padding: 50px;
+    padding-left: 600px;
+    font-size: 20px;
+}
+
+.droit {
+    text-align: center;
+}
+
+/* fin footer*/

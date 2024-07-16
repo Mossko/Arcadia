@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*générale*/
+
+body {
+    background: url('fond-vert-motif.avif');
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/*Header*/
+
+header {
+    background: url('Image de fond.jpg');
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo1 {
+    margin-left: 630px;
+}
+
+/*Navigation*/
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*Présentation services */
+
+.intro_services {
+    margin: 20px;
+    margin-left: 40px;
+    padding: 100px;
+}
+
+
+.intro_titre {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+/* Fin Présentation services */
+
+/*Restauration*/
+
+.description_resto {
+    margin: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.all-restaurants {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    font-size: 20px;
+    background: url('Image de fond.jpg');
+}
+
+/*Fin Restauration*/
+
+/*Visite*/
+
+.description_visite {
+    margin: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.all-visite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    font-size: 20px;
+    background: url('Image de fond.jpg');
+}
+
+.solo {
+    margin: 10px;
+    margin-left: 40px;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*fin visite*/
+
+/*Activité*/
+
+.description_activité {
+    margin: 10px;
+    margin-left: 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.all-activite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: white;
+    font-size: 20px;
+    background: url('Image de fond.jpg');
+
+}
+
+.dégradation {
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: black;
+}
+
+/*fin activité*/
+
+/*Avis*/
+
+.avis {
+    text-align: center;
+    padding: 80px;
+    font-weight: bold;
+}
+
+fieldset {
+    background: url('Image de fond.jpg');
+    color: white;
+}
+
+input {
+    font-size: larger;
+    color: green;
+    background-color: white;
+    border: 0px;
+}
+
+.C {
+    color: red;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+/*Fin avis*/
+
+
+/*footer*/
+
+footer {
+    background: url('Image de fond.jpg');
+    color: white;
+}
+
+.horaires {
+    text-align: center;
+    padding: 50px;
+    padding-left: 600px;
+    font-size: 20px;
+}
+
+.droit {
+    text-align: center;
+}
+
+/* fin footer*/
+
+/*Box de couleur */
+.ALL_Restaurant,
+.ALL_visite,
+.ALL_Acitivité {
+    background: green;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+aside {
+    background-color: green;
+}
+
+section,
+aside {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* fin Box de couleur */
