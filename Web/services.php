@@ -17,11 +17,11 @@
         <!-- Navigation -->
         <nav class="navigation">
             <ul>
-                <li><a href="homepage.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="habitat.html">Nos Habitat</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="homepage.php">Accueil</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="habitat.php">Nos Habitat</a></li>
+                <li><a href="connexion.php">Connexion</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
         <!-- Fin de la navigation -->
@@ -177,8 +177,8 @@
                     <legend>Partager votre avis</legend>
 
                     <div>
-                        <label for="mail">E-mail :</label>
-                        <input id="mail" type="email" placeholder="mail" required>
+                        <label for="pseudo">Pseudo :</label>
+                        <input id="pseudo" type="pseudo" placeholder="pseudo" required>
                     </div><br />
 
                     <div>
@@ -238,3 +238,19 @@
 </body>
 
 </html>
+
+<!--PHP-->
+<?php
+
+$pseudo = $_POST['pseudo'];
+?>
+<?php
+
+
+
+if (!empty($_POST) and $_POST['pseudo']) {
+    echo "Votre pseudo est $pseudo";
+}
+
+
+?>

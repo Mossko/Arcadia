@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="connexion.css">
 </head>
 
 <body>
@@ -17,11 +17,11 @@
         <!-- Navigation -->
         <nav class="navigation">
             <ul>
-                <li><a href="homepage.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="habitat.html">Nos Habitat</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="homepage.php">Accueil</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="habitat.php">Nos Habitat</a></li>
+                <li><a href="connexion.php">Connexion</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
         <!-- Fin de la navigation -->
@@ -30,38 +30,37 @@
 
         <!--Contact-->
 
-        <section class="contact">
-            <h1 class="contact_title">DEMANDE DE CONTACT</h1>
-            <p class="DM">Formulez votre demande nos employés vous répondrons dans les plus bref delais .
+        <section class="connexion">
+            <h1 class="connexion_title">Connexion</h1>
+            <p class="CN">Cette espace est réservé a notre personnel .
 
             </p>
 
             <form action="" method="POST">
-                <div class="ps">
-                    <label for="pseudo">Pseudo :</label>
-                    <input id="pseudo" type="pseudo" placeholder="Pseudo" required>
-                </div><br />
 
                 <div class="em">
-                    <label for="mail">E-mail :</label>
-                    <input id="mail" type="email" placeholder="mail" required>
                 </div><br />
-
                 <div class="ms">
-                    <label for="message">Message :</label>
-                    <textarea name="message" id="message" placeholder="Votre message" cols="100" rows="3">
 
-                </textarea>
+                    <input type="text" name="pseudo" autocomplete="off">
+                    <br>
+                    <input type="password" name="mdp">
+                    <br><br>
+                    <input type="submit" name="valider">
+
                 </div><br />
-                <button><input type="submit" value="ENVOYER"></button>
-                <img src="Courrier.webp" width="300" height="300">
+                <?php require 'Espace admin/connexion.php'; ?>
+                <?php require 'Espace Employés/connexion3.php'; ?>
+                <?php require 'Espace veterinaire/connexion2.php'; ?>
+
             </form>
+
 
         </section>
 
     </main>
 
-
+    <input type="submit" value="Se connecter">
     <footer>
         <!--Horaires-->
         <section class="horaires">
@@ -102,3 +101,19 @@
 </body>
 
 </html>
+
+<!--PHP-->
+<?php
+
+$pseudo = $_POST['pseudo'];
+?>
+<?php
+
+
+
+if (!empty($_POST) and $_POST['pseudo']) {
+    echo "Votre pseudo est $pseudo";
+}
+
+
+?>
