@@ -8,7 +8,7 @@
             "name": "PG Local",
             "database": "Arcadia",
             "username": "postgres",
-            "password": "Foulematou.95",
+            "password":
             "connectionTimeout": 30
         }
     ]
