@@ -1,4 +1,3 @@
-<!--Sécuriser la page -->
 <?php
 session_start();
 $dsn = 'localhost';
@@ -21,35 +20,29 @@ try {
 }
 
 if (!$_SESSION['mdp']) {
-    header('Location: connexion.php');
+    header('Location: connexion4.php');
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modification Habitat</title>
+    <title>Membres</title>
+    <link rel="stylesheet" href="connexion.css">
 </head>
 
 <body>
     <?php
-    $recuphabitat = $DDB->query('SELECT * FROM habitat');
-    while ($habitat = $recuphabitat->fetch()) {
+    $recupUsers = $DDB->query('SELECT * FROM users');
+    while ($user = $recupUsers->fetch()) {
     ?>
-        <div class="habitat">
-            <h1><?= $habitat['nom']; ?></h1>
-            <a href="modifHabitat.php?habitat_id=<?= $habitat['habitat_id']; ?>">
-                <button>Modifier les habitat</button></a>
-
-        </div>
-        <br>
+        <p><?= $user['nom']; ?> <a class="virer" href="supprimer.php?id=<?= $user['username_id']; ?>">Virer ce membre</a></p>
     <?php
     }
     ?>
+
 </body>
 
 </html>

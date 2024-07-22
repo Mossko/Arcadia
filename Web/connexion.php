@@ -1,9 +1,56 @@
+<!--Sécuriser la page -->
+<?php
+session_start();
+$dsn = 'localhost';
+$user = 'postgres';
+$password = 'Foulematou.95';
+try {
+    $dsn = "pgsql:host=localhost;port=5432;dbname=Arcadia;";
+    // make a database connection
+    $DDB = $bdd = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
+    if ($bdd) {
+        //echo "Connected to the Arcadia database successfully!";
+    }
+} catch (PDOException $e) {
+    die($e->getMessage());
+} finally {
+    if ($bdd) {
+        $bdd = NULL;
+    }
+}
+
+if (isset($_POST['valider'])) {
+    if (!empty($_POST['pseudo']) and !empty($_POST['mdp'])) {
+        $pseudo = htmlspecialchars($_POST['pseudo']);
+        $mdp  = htmlspecialchars($_POST['mdp']);
+
+        $recupUser = $DDB->prepare('SELECT*FROM "Utilisateur" where pseudo = ? AND mdp = ? ');
+        $recupUser->execute(array($pseudo, $mdp));
+
+        if ($recupUser->rowCount() > 0) {
+            $_SESSION['pseudo'] = $pseudo;
+            $_SESSION['mdp'] = $mdp;
+            //$_SESSION['username_id'] = $recupUser->fetch()['username_id'];
+        } else {
+            //echo " Erreur";
+        }
+    } else {
+        echo "Veuillez complétez tout les champs ...";
+    }
+    header('Location: connexion4.php');
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta http-equiv="" content="0;url=connexion2.php">
     <title>Connexion</title>
     <link rel="stylesheet" href="connexion.css">
 </head>
@@ -41,18 +88,14 @@
                 <div class="em">
                 </div><br />
                 <div class="ms">
-
+                    <h4>PSEUDO : </h4>
                     <input type="text" name="pseudo" autocomplete="off">
-                    <br>
+                    </br>
+                    <h4>MDP : </h4>
                     <input type="password" name="mdp">
-                    <br><br>
-                    <input type="submit" name="valider">
-
+                    </br><br>
+                    <input type="submit" name="valider" value="Se connecter">
                 </div><br />
-                <?php require 'Espace admin/connexion.php'; ?>
-                <?php require 'Espace Employés/connexion3.php'; ?>
-                <?php require 'Espace veterinaire/connexion2.php'; ?>
-
             </form>
 
 
@@ -60,7 +103,6 @@
 
     </main>
 
-    <input type="submit" value="Se connecter">
     <footer>
         <!--Horaires-->
         <section class="horaires">
@@ -101,19 +143,3 @@
 </body>
 
 </html>
-
-<!--PHP-->
-<?php
-
-$pseudo = $_POST['pseudo'];
-?>
-<?php
-
-
-
-if (!empty($_POST) and $_POST['pseudo']) {
-    echo "Votre pseudo est $pseudo";
-}
-
-
-?>

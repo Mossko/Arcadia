@@ -21,7 +21,7 @@ try {
 }
 
 if (!$_SESSION['mdp']) {
-    header('Location: connexion.php');
+    header('Location: connexion4.php');
 }
 
 if (isset($_POST['Valider les infos'])) {

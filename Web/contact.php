@@ -102,19 +102,3 @@
 </body>
 
 </html>
-
-<!--PHP-->
-<?php
-
-$pseudo = $_POST['pseudo'];
-?>
-<?php
-
-
-
-if (!empty($_POST) and $_POST['pseudo']) {
-    echo "Votre pseudo est $pseudo";
-}
-
-
-?>
