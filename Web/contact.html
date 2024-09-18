@@ -36,20 +36,20 @@
 
             </p>
 
-            <form action="" method="POST">
-                <div class="ps">
+            <form action="" method="POST" id="champ">
+                <div>
                     <label for="pseudo">Pseudo :</label>
-                    <input id="pseudo" type="pseudo" placeholder="Pseudo" required>
+                    <input type="pseudo" placeholder="Pseudo" id="pseudo" required>
                 </div><br />
 
-                <div class="em">
+                <div>
                     <label for="mail">E-mail :</label>
-                    <input id="mail" type="email" placeholder="mail" required>
+                    <input type="email" placeholder="mail" id="mail" required>
                 </div><br />
 
-                <div class="ms">
+                <div>
                     <label for="message">Message :</label>
-                    <textarea name="message" id="message" placeholder="Votre message" cols="100" rows="3">
+                    <textarea name="message" placeholder="Votre message" cols="100" rows="3" id="message">
 
                 </textarea>
                 </div><br />
@@ -99,6 +99,55 @@
         <p class="droit">&copy; 2023 Tous droits réservés STUDI. ARCADIA </p>
 
     </footer>
+
+    <script>
+        //Implémenter le JS de ma page
+
+        const inputPseudo = document.getElementById("pseudo");
+        const inputMessage = document.getElementById("message");
+        const inputMail = document.getElementById("mail");
+
+
+        inputPseudo.addEventListener("keyup", validateForm);
+        inputMessage.addEventListener("keyup", validateForm);
+        inputMail.addEventListener("keyup", validateForm);
+
+
+        //Function permettant de valider tout le formulaire
+        function validateForm() {
+            validateRequired(inputPseudo);
+            validateRequired(inputMessage);
+            validateRequired(inputMail);
+        }
+
+        function validateMail(input) {
+            //Définir mon regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const mailUser = input.value;
+            if (mailUser.match(emailRegex)) {
+                input.classList.add("is-valid");
+                input.classList.remove("is-invalid");
+                return true;
+            }
+            else {
+                input.classList.remove("is-valid");
+                input.classList.add("is-invalid");
+                return false;
+            }
+        }
+
+        function validateRequired(input) {
+            if (input.value != '') {
+                input.classList.add("is-valid");
+                input.classList.remove("is-invalid");
+            }
+            else {
+                input.classList.remove("is-valid");
+                input.classList.add("is-invalid");
+            }
+        }
+    </script>
+
 </body>
 
 </html>

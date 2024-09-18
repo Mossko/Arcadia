@@ -7,8 +7,6 @@
             "driver": "PostgreSQL",
             "name": "PG Local",
             "database": "Arcadia",
-            "username": "postgres",
-            "password":
             "connectionTimeout": 30
         }
     ]

@@ -1,211 +1,628 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Responsive*/
+
+@media screen and (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*générale*/
+
+    body {
+        background: url('fond-vert-motif.avif');
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+
+    /*Header*/
+
+    header {
+        background: url('Image de fond.jpg');
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo1 {}
+
+    /*Navigation*/
+    .navigation {
+        background-color: black;
+        display: flexbox;
+        justify-content: space-between;
+        align-items: end;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*Présentation zoo*/
+
+    .présentation {
+        /*margin: 20px;
+        margin-left: 40px;
+        padding: 100px;*/
+    }
+
+
+    .présentation-title {
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    /*fin présentaion zoo*/
+
+    /*Habitat*/
+    .Habitat {}
+
+    .Habitat_title {
+        font-size: 25px;
+
+    }
+
+    .Habitat_présentation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Habitat_Marais,
+    .Habitat_Jungle,
+    .Habitat_Savanne {
+        display: flex;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    /*Fin Habitat*/
+
+    /*Services*/
+
+    .Services {}
+
+    .services_title {
+        padding-top: 20px;
+        font-size: 25px;
+
+    }
+
+    .Services_présentation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Restaurant,
+    .Activité,
+    .Visite {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    /*Fin Services*/
+
+
+    /*Avis*/
+
+    .avis {
+        /* text-align: center;*/
+        padding: 20px;
+        font-weight: bold;
+        padding-right: 300px;
+    }
+
+    fieldset {
+        background: url('Image de fond.jpg');
+        color: white;
+    }
+
+    input {
+        font-size: larger;
+        color: green;
+        background-color: white;
+        border: 0px;
+    }
+
+    .C {
+        color: red;
+        font-weight: bolder;
+        margin-bottom: 30px;
+        text-align: start;
+    }
+
+    /*Fin avis*/
+
+
+    /*footer*/
+
+    footer {
+        background: url('Image de fond.jpg');
+        color: white;
+    }
+
+    .horaires {
+        text-align: center;
+        padding: 10px;
+        padding-left: 120px;
+        font-size: 13px;
+    }
+
+    .droit {
+        text-align: center;
+    }
+
+    /* fin footer*/
+
+    /*Box de couleur */
+    .Habitat,
+    .Services,
+    .présentation {
+        background: url('Image de fond.jpg');
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    aside {
+        background-color: green;
+    }
+
+    section,
+    aside {
+        padding: 20px;
+        padding-top: 2px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    /* fin Box de couleur */
+
 }
 
-/*générale*/
 
-body {
-    background: url('fond-vert-motif.avif');
-    color: black;
-    font-family: Arial, sans-serif;
+@media (min-width: 400px)and (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*générale*/
+
+    body {
+        background: url('fond-vert-motif.avif');
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+
+    /*Header*/
+
+    header {
+        background: url('Image de fond.jpg');
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo1 {
+        margin-left: 290px;
+    }
+
+    /*Navigation*/
+    .navigation {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*Présentation zoo*/
+
+    .présentation {
+        margin: 20px;
+        margin-left: 40px;
+        padding: 100px;
+    }
+
+
+    .présentation-title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /*fin présentaion zoo*/
+
+    /*Habitat*/
+    .Habitat {}
+
+    .Habitat_title {
+        font-size: 25px;
+
+    }
+
+    .Habitat_présentation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Habitat_Marais,
+    .Habitat_Jungle,
+    .Habitat_Savanne {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: white;
+        padding-bottom: 30px;
+    }
+
+    /*Fin Habitat*/
+
+    /*Services*/
+
+    .Services {}
+
+    .services_title {
+        padding-top: 20px;
+        font-size: 25px;
+
+    }
+
+    .Services_présentation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Restaurant,
+    .Activité,
+    .Visite {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 30px;
+    }
+
+    /*Fin Services*/
+
+
+    /*Avis*/
+
+    .avis {
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    fieldset {
+        background: url('Image de fond.jpg');
+        color: white;
+    }
+
+    input {
+        font-size: larger;
+        color: green;
+        background-color: white;
+        border: 0px;
+    }
+
+    .C {
+        color: red;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+
+    /*Fin avis*/
+
+
+    /*footer*/
+
+    footer {
+        background: url('Image de fond.jpg');
+        color: white;
+    }
+
+    .horaires {
+        text-align: center;
+        padding: 10px;
+        padding-left: 300px;
+        font-size: 13px;
+    }
+
+    .droit {
+        text-align: center;
+    }
+
+    /* fin footer*/
+
+    /*Box de couleur */
+    .Habitat,
+    .Services,
+    .présentation {
+        background: url('Image de fond.jpg');
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    aside {
+        background-color: green;
+    }
+
+    section,
+    aside {
+        padding: 20px;
+        padding-top: 2px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    /* fin Box de couleur */
 }
 
-/*Header*/
 
-header {
-    background: url('Image de fond.jpg');
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+
+@media (min-width:801px) and (max-width: 2400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*générale*/
+
+    body {
+        background: url('fond-vert-motif.avif');
+        color: black;
+        font-family: Arial, sans-serif;
+    }
+
+    /*Header*/
+
+    header {
+        background: url('Image de fond.jpg');
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo1 {
+        margin-left: 630px;
+    }
+
+    /*Navigation*/
+    .navigation {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    nav li {
+        margin-left: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*Présentation zoo*/
+
+    .présentation {
+        margin: 20px;
+        margin-left: 40px;
+        padding: 100px;
+    }
+
+
+    .présentation-title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /*fin présentaion zoo*/
+
+    /*Habitat*/
+    .Habitat {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .Habitat_title {
+        font-size: 25px;
+
+    }
+
+    .Habitat_présentation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Habitat_Marais,
+    .Habitat_Jungle,
+    .Habitat_Savanne {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        color: white;
+    }
+
+    /*Fin Habitat*/
+
+    /*Services*/
+
+    .Services {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services_title {
+        padding-top: 20px;
+        font-size: 25px;
+
+    }
+
+    .Services_présentation {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Restaurant,
+    .Activité,
+    .Visite {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        padding-left: 40px;
+        padding-right: 0px;
+        color: white;
+    }
+
+    /*Fin Services*/
+
+
+    /*Avis*/
+
+    .avis {
+        text-align: center;
+        padding: 80px;
+        font-weight: bold;
+    }
+
+    fieldset {
+        background: url('Image de fond.jpg');
+        color: white;
+    }
+
+    input {
+        font-size: larger;
+        color: green;
+        background-color: white;
+        border: 0px;
+    }
+
+    .C {
+        color: red;
+        font-weight: bolder;
+        margin-bottom: 30px;
+    }
+
+    /*Fin avis*/
+
+
+    /*footer*/
+
+    footer {
+        background: url('Image de fond.jpg');
+        color: white;
+    }
+
+    .horaires {
+        text-align: center;
+        padding: 50px;
+        padding-left: 600px;
+        font-size: 20px;
+    }
+
+    .droit {
+        text-align: center;
+    }
+
+    /* fin footer*/
+
+    /*Box de couleur */
+    .Habitat,
+    .Services,
+    .présentation {
+        background: url('Image de fond.jpg');
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    aside {
+        background-color: green;
+    }
+
+    section,
+    aside {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    /* fin Box de couleur */
 }
-
-.logo1 {
-    margin-left: 630px;
-}
-
-/*Navigation*/
-.navigation {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    padding: 20px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav li {
-    margin-left: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/*Présentation zoo*/
-
-.présentation {
-    margin: 20px;
-    margin-left: 40px;
-    padding: 100px;
-}
-
-
-.présentation-title {
-    text-align: center;
-    font-size: 20px;
-}
-
-/*fin présentaion zoo*/
-
-/*Habitat*/
-.Habitat {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin-bottom: 30px;
-
-}
-
-.Habitat_title {
-    font-size: 25px;
-
-}
-
-.Habitat_présentation {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-}
-
-.Habitat_Marais,
-.Habitat_Jungle,
-.Habitat_Savanne {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: white;
-}
-
-/*Fin Habitat*/
-
-/*Services*/
-
-.Services {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    margin-bottom: 30px;
-}
-
-.services_title {
-    padding-top: 20px;
-    font-size: 25px;
-
-}
-
-.Services_présentation {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-}
-
-.Restaurant,
-.Activité,
-.Visite {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: white;
-}
-
-/*Fin Services*/
-
-
-/*Avis*/
-
-.avis {
-    text-align: center;
-    padding: 80px;
-    font-weight: bold;
-}
-
-fieldset {
-    background: url('Image de fond.jpg');
-    color: white;
-}
-
-input {
-    font-size: larger;
-    color: green;
-    background-color: white;
-    border: 0px;
-}
-
-.C {
-    color: red;
-    font-weight: bolder;
-    margin-bottom: 30px;
-}
-
-/*Fin avis*/
-
-
-/*footer*/
-
-footer {
-    background: url('Image de fond.jpg');
-    color: white;
-}
-
-.horaires {
-    text-align: center;
-    padding: 50px;
-    padding-left: 600px;
-    font-size: 20px;
-}
-
-.droit {
-    text-align: center;
-}
-
-/* fin footer*/
-
-/*Box de couleur */
-.Habitat,
-.Services,
-.présentation {
-    background: url('Image de fond.jpg');
-    margin-right: 30px;
-    margin-left: 30px;
-    margin-top: 50px;
-}
-
-aside {
-    background-color: green;
-}
-
-section,
-aside {
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-/* fin Box de couleur */
