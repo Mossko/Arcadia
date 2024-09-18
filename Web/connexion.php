@@ -140,6 +140,8 @@ if (isset($_POST['valider'])) {
         <p class="droit">&copy; 2023 Tous droits réservés STUDI. ARCADIA </p>
 
     </footer>
+
+    <script type="module" src="Router/Router.js"></script>
 </body>
 
 </html>

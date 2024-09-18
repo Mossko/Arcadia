@@ -125,6 +125,19 @@
 
     </footer>
 
+    <script>
+        window.onload = CompteurDeVisiteur();
+
+        async function CompteurDeVisiteur() {
+            const result = await fetch('/compter', {
+                method: POST,
+                headers: {
+                    'content-type': 'application/json '
+                }
+            }).then((res) => res.json())
+        }
+    </script>
+
 </body>
 
 </html>
