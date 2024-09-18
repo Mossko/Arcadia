@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="homepage.css">
 </head>
@@ -26,7 +26,7 @@
         </nav>
         <!-- Fin de la navigation -->
     </header>
-    <main>
+    <main id="main-page">
 
         <!--Présentation du zoo -->
 
@@ -142,7 +142,7 @@
         <section class="avis">
 
             <form action="" method="POST">
-                <fieldset>
+                <fieldset class="VIA">
                     <p class="C">Votre commentaire sera supprimé s'il ne respecte pas le règlement.</p>
 
                     <legend>Partager votre avis</legend>
@@ -204,6 +204,8 @@
         <p class="droit">&copy; 2023 Tous droits réservés STUDI. ARCADIA </p>
 
     </Footer>
+
+    <script type="module" src="Router/Router.js"></script>
 
 </body>
 
