@@ -21,7 +21,7 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="habitat.php">Nos Habitat</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <!-- Fin de la navigation -->
