@@ -142,25 +142,27 @@
         <section class="avis">
 
             <form action="" method="POST">
-                <fieldset class="VIA">
-                    <p class="C">Votre commentaire sera supprimé s'il ne respecte pas le règlement.</p>
+                <div id="Taille">
+                    <fieldset cols="1" rows="1">
 
-                    <legend>Partager votre avis</legend>
+                        <p class="C">Votre commentaire sera supprimé s'il ne respecte pas le règlement.</p>
 
-                    <div>
-                        <label for="pseudo">Pseudo :</label>
-                        <input id="pseudo" type="pseudo" placeholder="pseudo" required>
-                    </div><br />
+                        <legend>Partager votre avis</legend>
 
-                    <div>
-                        <label for="commentaire">Votre commentaire :</label>
-                        <textarea name="commentaire" id="commentaire" placeholder="Donner votre avis" cols="100"
-                            rows="15" required>
+                        <div>
+                            <label for="pseudo">Pseudo :</label>
+                            <input id="pseudo" type="pseudo" placeholder="pseudo" required>
+                        </div><br />
 
-                    </textarea>
-                    </div><br />
-                    <input type="submit" value="Valider votre avis ">
-                </fieldset>
+                        <div>
+                            <label for="commentaire">Votre commentaire :</label>
+                            <textarea name="commentaire" id="commentaire" placeholder="Donner votre avis" cols="100"
+                                rows="15" required>
+                            </textarea>
+                        </div><br />
+                        <input type="submit" value="Valider votre avis ">
+                    </fieldset>
+                </div>
             </form>
         </section>
     </main>

@@ -33,6 +33,7 @@ if (!$_SESSION['mdp']) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modification service</title>
+    <link rel="stylesheet" href="servicesMod.css">
 </head>
 
 <body>
@@ -43,7 +44,7 @@ if (!$_SESSION['mdp']) {
         <div class="nom">
             <h1><?= $service['nom']; ?></h1>
             <a href="modifService.php?service_id=<?= $service['service_id']; ?>">
-                <button>Modifier la Consommation animal</button></a>
+                <button>Modifier les services</button></a>
         </div>
         <br>
     <?php

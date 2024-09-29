@@ -28,22 +28,28 @@
 
     /*Navigation*/
     .navigation {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+        padding-bottom: 10px;
         background-color: black;
-        display: flexbox;
-        justify-content: space-between;
-        align-items: end;
-        padding: 20px;
-        font-weight: bold;
+        /*display: grid;
+        justify-content: ;
+        align-items: ;
+        padding: 20px;*/
+        font-weight: bolder;
+        color: white;
+
     }
 
-    nav ul {
+    /*nav ul {
         display: flex;
         list-style-type: none;
     }
 
     nav li {
         margin-left: 20px;
-    }
+    }*/
 
     nav a {
         color: white;
@@ -124,12 +130,11 @@
 
 
     /*Avis*/
-
     .avis {
-        /* text-align: center;*/
+        text-align: center;
         padding: 20px;
         font-weight: bold;
-        padding-right: 300px;
+
     }
 
     fieldset {
@@ -149,6 +154,10 @@
         font-weight: bolder;
         margin-bottom: 30px;
         text-align: start;
+    }
+
+    #Taille fieldset {
+        display: none;
     }
 
     /*Fin avis*/

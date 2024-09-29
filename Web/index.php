@@ -12,9 +12,11 @@ if (!$_SESSION['mdp']) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Admin</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body class="index">
+
     <a href="membres.php">Afficher tout les membres</a>
     <br>
     <a href="servicesMod.php">Services du parc</a>
@@ -22,8 +24,6 @@ if (!$_SESSION['mdp']) {
     <a href="habitatMod.php">Habitat du parc</a>
     <br>
     <a href="animalMod.php">Animaux du parc</a>
-
-
 
 </body>
 

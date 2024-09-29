@@ -47,12 +47,12 @@ if (isset($_POST['valider'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espace admin-connexion</title>
-    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="conMod.css">
 
 </head>
 
 <body>
-    <form method="POST" action="">
+    <form method="POST" action="" class="connexion">
         <input type="text" name="pseudo" autocomplete="off">
         <br>
         <input type="password" name="mdp">

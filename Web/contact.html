@@ -53,7 +53,7 @@
 
                 </textarea>
                 </div><br />
-                <button><input type="submit" value="ENVOYER"></button>
+                <button><input type="submit" value="ENVOYER" id="myInput"></button>
                 <img src="Courrier.webp" width="300" height="300">
             </form>
 
@@ -101,6 +101,11 @@
     </footer>
 
     <script>
+        const inputElement = document.getElementById('myInput');
+
+        inputElement.addEventListener('keyup', (event) => {
+            console.log('Touche relâchée : ', event.key);
+        });
         //Implémenter le JS de ma page
 
         const inputPseudo = document.getElementById("pseudo");
@@ -147,6 +152,7 @@
             }
         }
     </script>
+
 
 </body>
 

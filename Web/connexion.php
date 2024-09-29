@@ -25,7 +25,7 @@ if (isset($_POST['valider'])) {
         $pseudo = htmlspecialchars($_POST['pseudo']);
         $mdp  = htmlspecialchars($_POST['mdp']);
 
-        $recupUser = $DDB->prepare('SELECT*FROM "Utilisateur" where pseudo = ? AND mdp = ? ');
+        $recupUser = $DDB->prepare('SELECT*FROM "Utilisateur" where "pseudo" = ? AND "mdp" = ? ');
         $recupUser->execute(array($pseudo, $mdp));
 
         if ($recupUser->rowCount() > 0) {
