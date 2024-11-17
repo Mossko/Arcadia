@@ -1,6 +1,6 @@
 /* Responsive*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     * {
         margin: 0;
         padding: 0;
@@ -24,7 +24,6 @@
         padding: 20px;
     }
 
-    .logo1 {}
 
     /*Navigation*/
     .navigation {
@@ -212,7 +211,7 @@
 }
 
 
-@media (min-width: 400px)and (max-width: 800px) {
+@media (min-width: 600px)and (max-width: 800px) {
     * {
         margin: 0;
         padding: 0;

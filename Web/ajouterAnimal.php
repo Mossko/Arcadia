@@ -1,4 +1,5 @@
 <!--Sécuriser la page -->
+
 <?php
 session_start();
 $dsn = 'localhost';
@@ -8,10 +9,6 @@ try {
     $dsn = "pgsql:host=localhost;port=5432;dbname=Arcadia;";
     // make a database connection
     $DDB = $bdd = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-
-    if ($bdd) {
-        //echo "Connected to the Arcadia database successfully!";
-    }
 } catch (PDOException $e) {
     die($e->getMessage());
 } finally {
@@ -25,7 +22,7 @@ if (!$_SESSION['mdp']) {
 }
 
 if (isset($_POST['Valider les infos'])) {
-    if (!empty($_POST['prénom']) and !empty($_POST['état']) and !empty($_POST['race'])) {
+    if (!empty($_POST['prénom']) && !empty($_POST['état']) && !empty($_POST['race'])) {
         $prénom = htmlspecialchars($_POST['prénom']);
         $état = htmlspecialchars($_POST['état']);
         $race = htmlspecialchars($_POST['race_id']);

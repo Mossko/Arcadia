@@ -36,11 +36,11 @@ app.listen(port, () => {
 
 module.exports = app;
 
-import { } from 'mongodb'
+//import {} from 'mongodb'
 
 export async function connect() {
     // Connection URL
-    const url = 'mongodb://localhost:27017/Arcadia'
+    const url = "mongodb://localhost/StatistiqueConsultationHabitat"
 
     let db
 

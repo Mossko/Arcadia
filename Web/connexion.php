@@ -8,10 +8,6 @@ try {
     $dsn = "pgsql:host=localhost;port=5432;dbname=Arcadia;";
     // make a database connection
     $DDB = $bdd = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-
-    if ($bdd) {
-        //echo "Connected to the Arcadia database successfully!";
-    }
 } catch (PDOException $e) {
     die($e->getMessage());
 } finally {
@@ -31,9 +27,7 @@ if (isset($_POST['valider'])) {
         if ($recupUser->rowCount() > 0) {
             $_SESSION['pseudo'] = $pseudo;
             $_SESSION['mdp'] = $mdp;
-            //$_SESSION['username_id'] = $recupUser->fetch()['username_id'];
         } else {
-            //echo " Erreur";
         }
     } else {
         echo "Veuillez complétez tout les champs ...";

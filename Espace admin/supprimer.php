@@ -13,7 +13,7 @@ try {
     }
 } catch (PDOException $e) {
     die($e->getMessage());
-} finally {
+} finally { 
     if ($bdd) {
         $bdd = NULL;
     }
